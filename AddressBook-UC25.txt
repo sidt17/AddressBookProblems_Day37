@@ -1,0 +1,70 @@
+UC-25 Delete entry in AddressBook json server
+
+
+1->curl -X DELETE -H "Content-Type:application/json" "http://localhost:4000/AddressBook/delete/4"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100     2  100     2    0     0     51      0 --:--:-- --:--:-- --:--:--    54{}                       
+     
+                                                                                                                                 //Id-4 has deleted
+
+
+2->curl -X GET -H "Content-Type:application/json" "http://localHost:4000/AddressBook/list"                                                                                                                           % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1156  100  1156    0     0  40162      0 --:--:-- --:--:-- --:--:-- 41285[
+  {
+    "id": 1,
+    "FirstName": "Vishal",
+    "LastName": "Sharma",
+    "Address": "ABC",
+    "City": "Mumbai",                                                                            //Getting remaining details
+    "State": "Maharashtra",
+    "Zip": "456342",
+    "PhoneNumber": "8899664433",
+    "EmailId": "Vishal@gmail.com"
+  },
+  {
+    "id": 2,
+    "FirstName": "Robert",
+    "LastName": "Lee",
+    "Address": "PQR",
+    "City": "Bhopal",
+    "State": "Madhya Pradesh",
+    "Zip": "456300",
+    "PhoneNumber": "8345064433",
+    "EmailId": "Robert@gmail.com"
+  },                                              
+  {
+    "id": 3,
+    "FirstName": "Raj",
+    "LastName": "Sharma",
+    "Address": "XYZ",
+    "City": "Chandigarh",
+    "State": "Punjab",
+    "Zip": "477542",
+    "PhoneNumber": "9867664433",
+    "EmailId": "Raj@gmail.com"                                                                  //Getting remaining details
+  },
+  {
+    "FirstName": "Sam",
+    "LastName": "Khan",
+    "Address": "A wing",
+    "City": "Indore",
+    "State": "MP",
+    "Zip": "454776",
+    "PhoneNumber": "87656565454",
+    "EmailId": "Sam@gmail.com",
+    "id": 5
+  },
+  {
+    "FirstName": "Shreya",
+    "LastName": "Vyas",
+    "Address": "E wing",                                                                   //Getting remaining details
+    "City": "Ajmer",
+    "State": "Rajasthan",
+    "Zip": "434376",
+    "PhoneNumber": "99358765454",
+    "EmailId": "Shreya@gmail.com",
+    "id": 6                     
+  }
+]

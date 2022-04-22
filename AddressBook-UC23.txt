@@ -1,0 +1,111 @@
+UC-23   Add Multiple enteries to AddressBook json server
+
+
+
+Used curl command-
+1-curl -X POST -H "Content-Type: application/json" -d '{"FirstName":"Sam","LastName":"Khan","Address":"A wing","City":"Indore","State":"MP","Zip":"454776","PhoneNumber":"87656565454","EmailId":"Sam@gmail.com"}' "http://localhost:4000/AddressBook/create"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   352  100   198  100   154   4422   3439 --:--:-- --:--:-- --:--:--  8000{
+  "FirstName": "Sam",
+  "LastName": "Khan",
+  "Address": "A wing",                                                                               //New Details added
+  "City": "Indore",
+  "State": "MP",
+  "Zip": "454776",
+  "PhoneNumber": "87656565454",
+  "EmailId": "Sam@gmail.com",
+  "id": 5
+}
+
+
+2-  curl -X POST -H "Content-Type: application/json" -d '{"FirstName":"Shreya","LastName":"Vyas","Address":"C wing","City":"Kolkata","State":"West Bengal","Zip":"453376","PhoneNumber":"87456765454","EmailId":"Shreya@gmail.com"}' "http://localhost:4000/AddressBook/create"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   384  100   214  100   170   8428   6695 --:--:-- --:--:-- --:--:-- 16000{
+  "FirstName": "Shreya",
+  "LastName": "Vyas",
+  "Address": "C wing",
+  "City": "Kolkata",
+  "State": "West Bengal",                                                                          //New Details added
+  "Zip": "453376",
+  "PhoneNumber": "87456765454",
+  "EmailId": "Shreya@gmail.com",
+  "id": 6
+}
+
+
+
+
+ curl -X GET -H "Content-Type:application/json" "http://localHost:4000/AddressBook/list"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1397  100  1397    0     0  50181      0 --:--:-- --:--:-- --:--:-- 51740[
+  {
+    "id": 1,
+    "FirstName": "Vishal",
+    "LastName": "Sharma",                                            //Getting all the details saved in AddressBook
+    "Address": "ABC",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Zip": "456342",
+    "PhoneNumber": "8899664433",
+    "EmailId": "Vishal@gmail.com"
+  },
+  {
+    "id": 2,
+    "FirstName": "Robert",
+    "LastName": "Lee",                                            //Getting all the details saved in AddressBook
+    "Address": "PQR",
+    "City": "Bhopal",
+    "State": "Madhya Pradesh",
+    "Zip": "456300",
+    "PhoneNumber": "8345064433",
+    "EmailId": "Robert@gmail.com"
+  },
+  {
+    "id": 3,
+    "FirstName": "Raj",
+    "LastName": "Sharma",
+    "Address": "XYZ",
+    "City": "Chandigarh",
+    "State": "Punjab",
+    "Zip": "477542",
+    "PhoneNumber": "9867664433",
+    "EmailId": "Raj@gmail.com"                                 //Getting all the details saved in AddressBook
+  },
+  {
+    "id": 4,
+    "FirstName": "Shivi",
+    "LastName": "Rathore",
+    "Address": "LMN",
+    "City": "Lucknow",
+    "State": "Uttar Pradesh",
+    "Zip": "477942",
+    "PhoneNumber": "8871264433",
+    "EmailId": "Shivi@gmail.com"
+  },
+  {
+    "FirstName": "Sam",
+    "LastName": "Khan",
+    "Address": "A wing",
+    "City": "Indore",
+    "State": "MP",
+    "Zip": "454776",                                                       //Getting all the details saved in AddressBook
+    "PhoneNumber": "87656565454",
+    "EmailId": "Sam@gmail.com",
+    "id": 5
+  },
+  {
+    "FirstName": "Shreya",
+    "LastName": "Vyas",
+    "Address": "C wing",
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Zip": "453376",
+    "PhoneNumber": "87456765454",
+    "EmailId": "Shreya@gmail.com",
+    "id": 6
+  }
+]
+

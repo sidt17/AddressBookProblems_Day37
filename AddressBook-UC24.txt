@@ -1,0 +1,17 @@
+UC-24 Update entry in AddressBook json server
+
+
+1-curl -X PUT -H "Content-Type: application/json" -d '{"FirstName":"Shreya","LastName":"Vyas","Address":"E wing","City":"Ajmer","State":"Rajasthan","Zip":"434376","PhoneNumber":"99358765454","EmailId":"Shreya@gmail.com"}' "http://localhost:4000/AddressBook/update/6"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   376  100   210  100   166   7508   5935 --:--:-- --:--:-- --:--:-- 13925{
+  "FirstName": "Shreya",
+  "LastName": "Vyas",
+  "Address": "E wing",
+  "City": "Ajmer",                                                     //For Id-6 
+  "State": "Rajasthan",                                                City,State,Zip,PhoneNumber have been updated
+  "Zip": "434376",
+  "PhoneNumber": "99358765454",
+  "EmailId": "Shreya@gmail.com",
+  "id": 6
+}

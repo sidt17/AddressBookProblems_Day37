@@ -1,0 +1,48 @@
+{
+"AddressBook": [
+{
+"id": 1,
+"FirstName": "Vishal",
+"LastName": "Sharma",
+"Address": "ABC",
+"City": "Mumbai",
+"State": "Maharashtra",
+"Zip": "456342",
+"PhoneNumber": "8899664433",
+"EmailId": "Vishal@gmail.com"
+},
+{
+"id": 2,
+"FirstName": "Robert",
+"LastName": "Lee",
+"Address": "PQR",
+"City": "Bhopal",
+"State": "Madhya Pradesh",
+"Zip": "456300",
+"PhoneNumber": "8345064433",
+"EmailId": "Robert@gmail.com"
+},
+{
+"id": 3,
+"FirstName": "Raj",
+"LastName": "Sharma",
+"Address": "XYZ",
+"City": "Chandigarh",
+"State": "Punjab",
+"Zip": "477542",
+"PhoneNumber": "9867664433",
+"EmailId": "Raj@gmail.com"
+},
+{
+"id": 4,
+"FirstName": "Shivi",
+"LastName": "Rathore",
+"Address": "LMN",
+"City": "Lucknow",
+"State": "Uttar Pradesh",
+"Zip": "477942",
+"PhoneNumber": "8871264433",
+"EmailId": "Shivi@gmail.com"
+}
+]
+}
